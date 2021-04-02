@@ -10,6 +10,7 @@ function Sortpopup({ items }) {
     setVisibleSort(!visibleSort);
   };
 
+  console.log(items);
   const handleOutsideClick = (e) => {
     let path = e.path || (e.composedPath && e.composedPath());
     if (!path.includes(sortRef.current)) {
