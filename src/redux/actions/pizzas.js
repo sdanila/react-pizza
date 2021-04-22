@@ -1,11 +1,27 @@
-import { SET_PIZZAS, SET_LOADING } from '.';
+import axios from 'axios';
+
+import { SET_PIZZAS, SET_LOADED } from '.';
+
+export const fetchPizzas = (category, sortBy) => (dispatch) => {
+  dispatch(setLoaded(false));
+  console.log(category, sortBy);
+  axios
+    .get(
+      `http://localhost:3001/pizzas?${category !== null ? `category=${category}&` : ''}_sort=${
+        sortBy.type
+      }&_order=${sortBy.order}`,
+    )
+    .then(({ data }) => {
+      dispatch(setPizzas(data));
+    });
+};
 
 export const setPizzas = (items) => ({
   type: SET_PIZZAS,
   payload: items,
 });
 
-export const setLoading = (items) => ({
-  type: SET_LOADING,
-  payload: items,
+export const setLoaded = (payload) => ({
+  type: SET_LOADED,
+  payload,
 });
