@@ -4,7 +4,6 @@ import { SET_PIZZAS, SET_LOADED } from '.';
 
 export const fetchPizzas = (category, sortBy) => (dispatch) => {
   dispatch(setLoaded(false));
-  console.log(category, sortBy);
   axios
     .get(
       `http://localhost:3001/pizzas?${category !== null ? `category=${category}&` : ''}_sort=${
