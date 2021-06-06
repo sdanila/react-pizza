@@ -122,7 +122,6 @@ body {
 
       img {
         width: 80px;
-        height: 80px;
       }
     }
 
@@ -156,6 +155,10 @@ body {
           path:first-of-type {
             display: none;
           }
+        }
+        &-disabled {
+          pointer-events: none;
+          background-color: #d4d4d4;
         }
       }
 
@@ -311,3 +314,5 @@ body {
     }
   }
 }
+
+@import 'media';

@@ -1,0 +1,422 @@
+@media (max-width: 1238px) {
+  .content {
+    &__top {
+      justify-content: flex-start;
+    }
+  }
+  .pizza-block {
+    width: 27%;
+    &__price {
+      font-size: 19px;
+    }
+  }
+  .categories {
+    width: 80%;
+    ul {
+      width: 100%;
+      li {
+        padding: 10px 5px;
+        width: 18%;
+        text-align: center;
+        font-size: 13px;
+      }
+    }
+  }
+  .sort {
+    width: 22px;
+    &__label {
+      font-size: 14px;
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    width: 96%;
+  }
+  .pizza-block {
+    &__image {
+      width: 80%;
+    }
+    &__title {
+      font-size: 16px;
+    }
+    &__selector ul li {
+      font-size: 12px;
+    }
+    &__price {
+      font-size: 15px;
+    }
+    .button {
+      padding: 8px 20px;
+      min-width: 80px;
+      &--add {
+        svg {
+          margin-right: 4px;
+          padding-top: 3px;
+        }
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .categories {
+    ul {
+      li {
+        font-size: 10px;
+      }
+    }
+  }
+  .sort {
+    &__label,
+    &__label span {
+      font-size: 10px;
+    }
+    &__popup {
+      margin-top: 8px;
+      padding: 4px 0;
+      width: 125px;
+      font-size: 12px;
+      ul li {
+        padding: 10px 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container--cart {
+    margin: 0 auto;
+  }
+  .header {
+    padding: 35px 0;
+    &__logo {
+      h1 {
+        font-size: 18px;
+      }
+      img {
+        width: 20%;
+      }
+      p {
+        font-size: 10px;
+      }
+    }
+    .button--cart {
+      padding: 9px 22px;
+    }
+  }
+  .content {
+    padding: 29px 0;
+    &__title {
+      margin: 30px 0;
+      margin-left: 6px;
+      font-size: 17px;
+      line-height: 17px;
+    }
+  }
+  .categories {
+    width: 77%;
+    ul li {
+      padding: 10px 2px;
+      width: 17%;
+      font-size: 7px;
+      margin-right: 5px;
+    }
+  }
+  .sort {
+    width: 28%;
+    &__label {
+      font-size: 8px;
+    }
+    svg {
+      margin-right: 6px;
+    }
+  }
+  .pizza-block {
+    margin-bottom: 40px;
+    &__title {
+      font-size: 9px;
+      margin-bottom: 13px;
+    }
+    &__selector ul li {
+      font-size: 9px;
+      padding: 5px;
+    }
+    &__bottom {
+      flex-direction: column;
+      margin-top: 4px;
+    }
+    &__price {
+      font-size: 13px;
+    }
+    .button {
+      padding: 8px 11px;
+      &--add span {
+        font-size: 10px;
+      }
+    }
+  }
+  .cart {
+    &--empty {
+      width: 100%;
+      h2 {
+        font-size: 25px;
+      }
+      p {
+        font-size: 13px;
+      }
+    }
+    .content__title {
+      font-size: 17px;
+      svg {
+        width: 18px;
+        margin-right: 7px;
+      }
+    }
+    &__clear {
+      span {
+        margin-left: 4px;
+        font-size: 13px;
+      }
+      svg {
+        width: 14px;
+      }
+    }
+    &__item {
+      padding-top: 20px;
+      margin-top: 20px;
+      &-img img {
+        width: 100%;
+      }
+      &-info {
+        width: 43%;
+        h3 {
+          font-size: 14px;
+          line-height: 22px;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+      &-count b {
+        font-size: 15px;
+      }
+      &-price {
+        width: 30%;
+        b {
+          font-size: 17px;
+        }
+      }
+    }
+    .button--circle {
+      height: 20px;
+      min-width: none;
+      width: 20px;
+      svg {
+        width: 8px;
+      }
+    }
+    &__bottom {
+      &-details span {
+        font-size: 18px;
+      }
+      &-buttons {
+        margin-top: 35px;
+        .go-back-btn {
+          width: 35%;
+          span {
+            font-size: 14px;
+          }
+        }
+        .pay-btn {
+          font-size: 14px;
+          width: 35%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 574px) {
+  body {
+    padding: 25px;
+  }
+  .wrapper {
+    width: 85%;
+  }
+  .header {
+    padding: 20px 0;
+    &__logo {
+      h1 {
+        font-size: 10px;
+      }
+      p {
+        font-size: 6px;
+      }
+      img {
+        width: 22%;
+        margin-right: 9px;
+      }
+    }
+    .button {
+      &--cart {
+        padding: 1px 22px;
+        span {
+          font-size: 9px;
+        }
+        svg {
+          width: 10px;
+          margin-right: 5px;
+          margin-bottom: 1px;
+        }
+      }
+      &__delimetr {
+        margin: 0 10px;
+      }
+    }
+  }
+  .content {
+    &__top {
+      position: relative;
+    }
+    &__items {
+      justify-content: space-between;
+    }
+  }
+  .categories {
+    width: 100%;
+    ul li {
+      padding: 6px 2px;
+      margin-right: 3px;
+      font-size: 5px;
+    }
+  }
+  .sort {
+    width: 104px;
+    position: absolute;
+    right: 0;
+    top: 36px;
+    svg {
+      margin-right: 3px;
+      width: 4px;
+    }
+    &__label {
+      font-size: 6px;
+      span {
+        font-size: 7px;
+      }
+    }
+    &__popup {
+      margin-top: 5px;
+      width: 94px;
+      font-size: 9px;
+      ul li {
+        padding: 9px 7px;
+      }
+    }
+  }
+  .pizza-block {
+    margin-bottom: 30px;
+    width: 46%;
+    &__title {
+      margin-bottom: 9px;
+    }
+    &:not(:nth-of-type(3n)) {
+      margin-right: 0;
+    }
+  }
+  .container--cart {
+    margin: 9px auto;
+  }
+  .cart {
+    &--empty {
+      width: 100%;
+      h2 {
+        font-size: 17px;
+        margin-bottom: 9px;
+      }
+      p {
+        font-size: 9px;
+      }
+      img {
+        width: 60%;
+      }
+      .button--black {
+        padding: 10px 0;
+        width: 55%;
+        font-size: 9px;
+      }
+    }
+    .content__title {
+      font-size: 14px;
+      svg {
+        width: 14px;
+        margin-right: 6px;
+      }
+    }
+    &__clear {
+      svg {
+        width: 11px;
+      }
+      span {
+        font-size: 10px;
+      }
+    }
+    &__item {
+      padding-top: 15px;
+      margin-top: 15px;
+      &-img {
+        margin-right: 10px;
+      }
+      &-info {
+        h3 {
+          font-size: 9px;
+          line-height: 14px;
+        }
+        p {
+          font-size: 8px;
+        }
+      }
+      &-count {
+        width: 20%;
+        b {
+          font-size: 11px;
+        }
+      }
+      &-price b {
+        font-size: 11px;
+      }
+    }
+    &__bottom {
+      &-details span {
+        font-size: 11px;
+      }
+      &-buttons {
+        .go-back-btn span,
+        .pay-btn span {
+          font-size: 8px;
+        }
+        .pay-btn {
+          padding: 8px;
+        }
+      }
+    }
+    .button--circle {
+      height: 15px;
+      width: 15px;
+      svg {
+        width: 5px;
+      }
+    }
+  }
+  .button--add i {
+    width: 17px;
+    height: 17px;
+    font-size: 10px;
+    line-height: 17px;
+  }
+}
