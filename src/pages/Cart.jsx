@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 
-import { CartItem } from '../components';
+import { CartItem, Button } from '../components';
 import { removeCart, removeCartItem, minusItem, plusItem } from '../redux/actions/cart';
 import emptyCartImage from '../assets/img/empty-cart.png';
 
@@ -32,6 +32,10 @@ function Cart() {
 
   const onMinusPizza = (id) => {
     dispatch(minusItem(id));
+  };
+
+  const onCLickOrder = () => {
+    console.log('ВАШ ЗАКАЗ', items);
   };
 
   return (
@@ -154,9 +158,9 @@ function Cart() {
 
                 <span>Вернуться назад</span>
               </Link>
-              <div className="button pay-btn">
+              <Button onClick={onCLickOrder} className="pay-btn">
                 <span>Оплатить сейчас</span>
-              </div>
+              </Button>
             </div>
           </div>
         </div>

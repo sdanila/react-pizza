@@ -22,22 +22,16 @@ function Home() {
   const cartItems = useSelector(({ cart }) => cart.items);
 
   React.useEffect(() => {
-    dispatch(fetchPizzas(category, sortBy));
-  }, [category, sortBy, dispatch]);
+    dispatch(fetchPizzas(category, sortBy)); // eslint-disable-next-line
+  }, [category, sortBy]);
 
-  const onSelectCategory = React.useCallback(
-    (index) => {
-      dispatch(setCategory(index));
-    },
-    [dispatch],
-  );
+  const onSelectCategory = React.useCallback((index) => {
+    dispatch(setCategory(index)); // eslint-disable-next-line
+  }, []);
 
-  const onSelectSortType = React.useCallback(
-    (type) => {
-      dispatch(setSortBy(type));
-    },
-    [dispatch],
-  );
+  const onSelectSortType = React.useCallback((type) => {
+    dispatch(setSortBy(type)); // eslint-disable-next-line
+  }, []);
 
   const addPizzaCartHandler = (obj) => {
     dispatch(addPizzaCart(obj));
